@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="app-name">
+        <h3>LOAN CALCULATOR</h3>
+    </div>
+    <fieldset class="fieldset-one">
+        <legend>Loan Amount</legend>
+        <span>rs</span>
+        <input type="number" class="loan-amount-input" placeholder="0">
+        </fieldset>
+    <fieldset class="fieldset-two">
+        <legend>Loan Term</legend>
+        <span>years</span>
+        <input type="number" class="loan-term-input" placeholder="0">
+    </fieldset>
+    <fieldset class="fieldset-three">
+            <legend>Interest Rate</legend>
+            <span>%</span>
+            <input type="number" class="interest-rate-input" placeholder="0">
+        </fieldset>
+        <button class="calculate-btn">Calculate</button>
+        <div class="result">
+            <table>
+                <tr>
+                    <td>Loan Amount</td>
+                    <td class="loan-amount"></td>
+                </tr>
+                <tr>
+                    <td>Monthly EMI</td>
+                    <td class="monthly-emi"></td>
+                </tr>
+                <tr>
+                    <td>Interest Payabale</td>
+                    <td class="interest-payable"></td>
+                </tr>
+                <tr>
+                    <td>Total Payabale</td>
+                    <td class="total-payable"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
